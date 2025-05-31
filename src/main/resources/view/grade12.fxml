@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="maincontainer" prefHeight="750.0" prefWidth="906.0" style="-fx-background-color: blue;" stylesheets="@../css/style/grade12Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.besere.controller.Grade12Controller">
+   <children>
+      <ScrollPane fx:id="tablecontainer" layoutX="12.0" layoutY="108.0" prefHeight="596.0" prefWidth="1039.0" style="-fx-background-color: yellow;" translateX="11.0">
+         <content>
+            <TableView id="table-view" fx:id="grade12Table" prefHeight="587.0" prefWidth="1056.0" style="-fx-background-color: white;" AnchorPane.rightAnchor="0.0">
+              <columns>
+                  <TableColumn id="id-col" fx:id="idColumn" prefWidth="89.66666412353516" text="ID" />
+                  <TableColumn id="name-col" fx:id="nameColumn" prefWidth="143.0" text="FIRST NAME" />
+                  <TableColumn id="middlename-col" fx:id="middlenameColumn" prefWidth="159.0" text="MIDDLE NAME" />
+                  <TableColumn id="lastname-col" fx:id="lastnameColumn" prefWidth="179.0" text="LAST NAME" />
+                  <TableColumn id="age-col" fx:id="ageColumn" prefWidth="135.0" text="AGE" />
+                  <TableColumn id="birthdate-col" fx:id="birthdateColumn" minWidth="0.0" prefWidth="168.0" text="BIRTHDATE" />
+                  <TableColumn id="yearlevel-col" fx:id="yearLevelColumn" minWidth="0.0" prefWidth="147.0" text="YEAR LEVEL" />
+              </columns>
+            
+            </TableView>
+         </content>
+      </ScrollPane>
+      <HBox layoutX="-1.0" prefHeight="90.0" prefWidth="1176.0">
+         <children>
+            <TextField fx:id="searchField" prefHeight="49.0" prefWidth="376.0" text="Search Here..." translateX="10.0" translateY="22.0">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </TextField>
+            <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="-35.0" translateY="31.0">
+               <image>
+                  <Image url="@../images/search.png" />
+               </image>
+            </ImageView>
+            <Label text="Grade 12" textFill="WHITE" translateX="328.0" translateY="27.0">
+               <font>
+                  <Font name="Montserrat-Bold" size="38.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="84.0" fitWidth="107.0" pickOnBounds="true" preserveRatio="true" translateX="339.0" translateY="9.0">
+               <image>
+                  <Image url="@../images/cnhs%20logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

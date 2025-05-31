@@ -1,0 +1,24 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 14, 2025, 10:42:25 PM
+    Author     : admin
+*/
+
+/* TABLE STYLE */
+.table-view{
+    -fx-font-family: "Arial";
+    -fx-font-size: 17px;
+    -fx-text-fill: black;
+}
+
+.table-cell{
+    -fx-font-size:15px;
+    -fx-font-family: "Arial";
+    -fx-text-fill: #222;
+    -fx-alignment: center;
+}
+
+

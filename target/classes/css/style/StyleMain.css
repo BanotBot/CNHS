@@ -1,0 +1,29 @@
+
+
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+
+/* 
+    Created on : May 17, 2025, 2:56:47 PM
+    Author     : admin
+*/
+
+/* MAIN STYLE */
+.root{
+    -fx-background-color:blue;
+}
+
+#nameField,#mnameField,#lnameField,#ageField{
+    -fx-font-size:20px;
+    -fx-text-fill:blue;
+}
+
+/* UPLOADING STYLE */
+#AnchorPane{
+   -fx-background-color:#222;
+}
+#progressBar{
+    -fx-accent: #56a2f7 ;
+}

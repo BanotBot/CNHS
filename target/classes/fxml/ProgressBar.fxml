@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="uploadingParentPane" prefHeight="754.0" prefWidth="920.0" stylesheets="@css/style/StyleMain.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.besere.uicontroller.UploadingController">
+   <children>
+      <Pane fx:id="mainContentPane" prefHeight="751.0" prefWidth="1090.0">
+         <children>
+            <ImageView fx:id="loadingImage" fitHeight="119.0" fitWidth="154.0" layoutX="489.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" translateX="2.0" translateY="-2.0">
+               <image>
+                  <Image url="@../images/loading2.png" />
+               </image>
+            </ImageView>
+            <ProgressBar id="progressBar" fx:id="progressBar" layoutX="150.0" layoutY="440.0" prefHeight="26.0" prefWidth="776.0" progress="0.0" />
+            <Label layoutX="341.0" layoutY="368.0" text="Uploading Data .........." textFill="#3300ff">
+               <font>
+                  <Font name="Montserrat-Bold" size="37.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="90.0" fitWidth="96.0" layoutX="503.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/cnhs%20logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
