@@ -10,6 +10,7 @@ com\besere\uicontroller\UploadingController$1.class
 com\besere\controller\Grade11Controller$1.class
 com\besere\controller\Grade9Controller.class
 com\besere\controller\Grade7Controller$2.class
+com\besere\StudentDAO\RegisterDataQuery.class
 com\besere\controller\Grade12Controller.class
 com\besere\contentloader\grade12loader.class
 com\besere\contentloader\grade11loader.class
@@ -40,7 +41,6 @@ com\besere\controller\Grade10UpdateController.class
 com\besere\contentloader\grade9loader.class
 com\besere\contentloader\grade8loader.class
 com\besere\contentloader\grade7loader.class
-com\besere\StudentDAO\Register.class
 com\besere\uicontroller\DialogUtil.class
 com\besere\controller\Grade8Controller$2.class
 com\besere\controller\Grade7UpdateController.class

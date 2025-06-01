@@ -346,6 +346,10 @@ public class MainController implements Initializable
         profileImage.setImage(image);
     }
 
+    public AnchorPane getmainPane(){
+        return mainPane;
+    }
+    
     public Pane getMainContent(){
       return mainContentPane;
     }

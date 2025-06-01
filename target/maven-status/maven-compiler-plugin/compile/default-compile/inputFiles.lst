@@ -16,6 +16,7 @@ G:\Java\CNHS\src\main\java\com\besere\StudentDAO\CheckTableQuery.java
 G:\Java\CNHS\src\main\java\com\besere\controller\Grade11Controller.java
 G:\Java\CNHS\src\main\java\com\besere\StudentService\StudentService.java
 G:\Java\CNHS\src\main\java\com\besere\controller\Grade12Controller.java
+G:\Java\CNHS\src\main\java\com\besere\StudentDAO\RegisterDataQuery.java
 G:\Java\CNHS\src\main\java\com\besere\StudentDAO\DeleteDataQuery.java
 G:\Java\CNHS\src\main\java\com\besere\validator\ValidatorData.java
 G:\Java\CNHS\src\main\java\module-info.java
@@ -24,7 +25,6 @@ G:\Java\CNHS\src\main\java\com\besere\filechooser\FileChooserDialog.java
 G:\Java\CNHS\src\main\java\com\besere\contentloader\grade11loader.java
 G:\Java\CNHS\src\main\java\com\besere\uicontroller\DialogLoader.java
 G:\Java\CNHS\src\main\java\com\besere\controller\Grade9UpdateController.java
-G:\Java\CNHS\src\main\java\com\besere\StudentDAO\Register.java
 G:\Java\CNHS\src\main\java\com\besere\controller\SceneController.java
 G:\Java\CNHS\src\main\java\com\besere\StudentProvider\StudentTableController.java
 G:\Java\CNHS\src\main\java\com\besere\controller\Grade9Controller.java

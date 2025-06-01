@@ -7,6 +7,7 @@
 package com.besere.controller;
 
 import com.besere.StudentDAO.LoginDataQuery;
+import com.besere.StudentDAO.RegisterDataQuery;
 import com.besere.validator.ValidatorData;
 import java.io.IOException;
 import java.net.URL;
@@ -45,6 +46,8 @@ public class SceneController implements Initializable {
     @FXML private Label switchtoLogin;
     @FXML private TextField username;
     @FXML private TextField password;
+    @FXML private Label loginMessage;
+    @FXML private Label RegisterMessage;
     
     @Override
     public void initialize(URL url,ResourceBundle rb) {
@@ -66,7 +69,7 @@ public class SceneController implements Initializable {
                 try {
                     switchDisplayWindow("2",(Node) e.getSource());
                 } catch (IOException ex) {
-                    Logger.getLogger(SceneController.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(SceneController.class.getName()).log(Level.SEVERE,null,ex);
                 }
             });
         }
@@ -87,7 +90,8 @@ public class SceneController implements Initializable {
         stage.show();
     }
     
-    @FXML public void LoginAction() throws IOException, ClassNotFoundException, SQLException{
+    @FXML public void LoginAction(ActionEvent event) throws IOException, ClassNotFoundException, SQLException
+    {
         System.out.println("Submitttedd login credentials..............");
         String usernameData = username.getText().strip();
         String passwordData = password.getText().strip();
@@ -96,16 +100,43 @@ public class SceneController implements Initializable {
        
         if (!ValidatorData.anynull(usernameData,passwordData)) {
             System.out.println("Yess..........");
+            LoginDataQuery.setSceneController(this);
             LoginDataQuery.processLogin(usernameData,passwordData);
         }
     }
     
-    public void RegisterAction(ActionEvent event) throws IOException, ClassNotFoundException, SQLException{
+    @FXML public void RegisterAction(ActionEvent event) throws IOException, ClassNotFoundException, SQLException
+    {
         String usernameData = username.getText().strip();
         String passwordData = password.getText().strip();
+       
+        if (!ValidatorData.anynull(usernameData,passwordData)) {
+            RegisterDataQuery.setSceneController(this);
+            RegisterDataQuery.insertData(usernameData,passwordData);
+        }
+    }
+    
+    public void showMainContent() throws IOException{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Main.fxml"));
+        Parent mainroot = loader.load();
+        
+        scene = new Scene(mainroot);
+        stage = (Stage) username.getScene().getWindow();
+        stage.setScene(scene);
+        stage.setMaximized(true);
+        stage.show();
     }
 
     public void setStage(Stage stage){
         this.stage = stage;
     }
+    
+    public Label getLoginMessage(){
+        return loginMessage;
+    }
+    
+    public Label getRegisterMessage(){
+        return RegisterMessage;
+    }
+        
 }

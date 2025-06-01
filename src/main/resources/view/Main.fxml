@@ -6,6 +6,7 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -33,7 +34,7 @@
                   <Font name="Montserrat-Regular" size="48.0" />
                </font>
             </Label>
-            <AnchorPane prefHeight="638.0" prefWidth="307.0">
+            <AnchorPane prefHeight="639.0" prefWidth="307.0">
                <children>
                   <Label fx:id="grade7" alignment="CENTER" layoutX="2.0" layoutY="37.0" prefHeight="64.0" prefWidth="304.0" text="Grade 7" textFill="#3d02ff">
                      <font>
@@ -103,30 +104,35 @@
             </AnchorPane>
          </children>
       </FlowPane>
-      <Pane fx:id="mainContentPane" layoutX="313.0" layoutY="-8.0" prefHeight="754.0" prefWidth="939.0" style="-fx-background-color: blue;" translateY="3.0">
+      <Pane fx:id="mainContentPane" layoutX="312.0" layoutY="-8.0" prefHeight="754.0" prefWidth="940.0" style="-fx-background-color: blue;" translateY="3.0">
          <children>
-            <HBox prefHeight="71.0" prefWidth="927.0" spacing="34.0">
+            <HBox layoutY="-11.0" prefHeight="98.0" prefWidth="1000.0" spacing="34.0" translateY="18.0">
                <children>
-                  <ImageView fx:id="profileImage" fitHeight="56.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" translateX="17.0" translateY="2.0">
+                  <ImageView fx:id="profileImage" fitHeight="91.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true" translateX="17.0" translateY="2.0">
                      <image>
                         <Image url="@../images/profile.png" />
                      </image>
                   </ImageView>
-                  <Label text="Ivan Dave Besere" textFill="WHITE" translateX="-5.0" translateY="16.0">
+                  <Label prefHeight="35.0" prefWidth="249.0" text="Ivan Dave Besere" textFill="WHITE" translateX="-5.0" translateY="24.0">
                      <font>
-                        <Font name="Montserrat-Bold" size="21.0" />
+                        <Font name="Montserrat-Bold" size="26.0" />
                      </font>
                   </Label>
-                  <Label layoutX="60.0" layoutY="10.0" prefHeight="34.0" prefWidth="147.0" text="About us" textFill="WHITE" translateX="166.0" translateY="23.0">
-                     <font>
-                        <Font name="Montserrat-Bold" size="28.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="150.0" layoutY="10.0" prefHeight="39.0" prefWidth="154.0" text="Contact us" textFill="WHITE" translateX="166.0" translateY="21.0">
-                     <font>
-                        <Font name="System Bold" size="27.0" />
-                     </font>
-                  </Label>
+                  <ImageView fx:id="profileImage1" fitHeight="41.0" fitWidth="40.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" translateX="419.0" translateY="9.0">
+                     <image>
+                        <Image url="@../images/support%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="profileImage11" fitHeight="46.0" fitWidth="41.0" layoutX="318.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" translateX="419.0" translateY="9.0">
+                     <image>
+                        <Image url="@../images/about-us.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="profileImage12" fitHeight="41.0" fitWidth="40.0" layoutX="415.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" translateX="419.0" translateY="9.0">
+                     <image>
+                        <Image url="@../images/setting.png" />
+                     </image>
+                  </ImageView>
                </children>
                <padding>
                   <Insets top="10.0" />
@@ -137,10 +143,13 @@
                   <Font name="Montserrat-Bold" size="37.0" />
                </font>
             </Label>
-            <Button layoutX="409.0" layoutY="614.0" mnemonicParsing="false" onAction="#submitStud" prefHeight="53.0" prefWidth="138.0" text="SUBMIT" textFill="#052eff">
+            <Button layoutX="420.0" layoutY="615.0" mnemonicParsing="false" onAction="#submitStud" prefHeight="53.0" prefWidth="138.0" text="SUBMIT" textFill="#052eff">
                <font>
                   <Font name="Montserrat-Regular" size="20.0" />
                </font>
+               <effect>
+                  <Glow level="0.22" />
+               </effect>
             </Button>
             <TextField id="nameField" fx:id="nameField" layoutX="116.0" layoutY="307.0" prefHeight="55.0" prefWidth="346.0" translateY="-62.0" />
             <TextField id="mnameField" fx:id="mnameField" layoutX="503.0" layoutY="305.0" prefHeight="55.0" prefWidth="368.0" translateX="19.0" translateY="-60.0" />
