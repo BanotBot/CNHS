@@ -77,27 +77,27 @@
                   </VBox>
                   <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="15.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true" translateX="11.0">
                      <image>
-                        <Image url="@../images/open-book.png" />
+                        <Image url="@../images/graduation.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="13.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true" translateX="10.0">
                      <image>
-                        <Image url="@../images/open-book.png" />
+                        <Image url="@../images/graduation.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="14.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true" translateX="8.0">
                      <image>
-                        <Image url="@../images/open-book.png" />
+                        <Image url="@../images/graduation.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="16.0" layoutY="332.0" pickOnBounds="true" preserveRatio="true" translateX="6.0">
                      <image>
-                        <Image url="@../images/open-book.png" />
+                        <Image url="@../images/graduation.png" />
                      </image>
                   </ImageView>
                   <ImageView fitHeight="45.0" fitWidth="41.0" layoutX="16.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true" translateX="4.0">
                      <image>
-                        <Image url="@../images/open-book.png" />
+                        <Image url="@../images/graduation.png" />
                      </image>
                   </ImageView>
                </children>

@@ -60,7 +60,7 @@ public class UploadingController implements Initializable{
                     System.out.println(i);
                     updateProgress(i + 1,100);
                     Thread.sleep(200);
-                    if (i == 100) {
+                    if (i == 96) {
                         main.submitData();
                     }
                 }

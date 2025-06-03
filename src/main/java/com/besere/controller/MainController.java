@@ -189,6 +189,7 @@ public class MainController implements Initializable
                 System.out.println("Error -> " + ex.getMessage());
             }
         });
+        
         profileImage.addEventHandler(MouseEvent.MOUSE_CLICKED,e ->{
             //FILE CHOOSER FOR UPLOAD PHOTO
             FileChooserDialog getFile = new FileChooserDialog();
@@ -243,10 +244,8 @@ public class MainController implements Initializable
                     System.err.println(ex.getMessage());
                 }
         
-        
                 //Clear the input field after the upload of the data
                 Platform.runLater(() ->{
- 
                         studentsList.add(student);
                         nameField.clear();
                         mnameField.clear();
@@ -254,7 +253,6 @@ public class MainController implements Initializable
                         ageField.clear();
                         myCalendar.setValue(null);
                         yearLevel.setValue(null);
-                        
                 });
             }
  

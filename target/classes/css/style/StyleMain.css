@@ -23,6 +23,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to ed
 /* UPLOADING STYLE */
 #AnchorPane{
    -fx-background-color:#222;
+   -fx-padding:0;
 }
 #progressBar{
     -fx-accent: #56a2f7 ;

@@ -10,7 +10,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="uploadingParentPane" prefHeight="754.0" prefWidth="920.0" stylesheets="@css/style/StyleMain.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.besere.uicontroller.UploadingController">
    <children>
-      <Pane fx:id="mainContentPane" prefHeight="751.0" prefWidth="1090.0">
+      <Pane fx:id="mainContentPane" layoutX="-64.0" prefHeight="751.0" prefWidth="1154.0">
          <children>
             <ImageView fx:id="loadingImage" fitHeight="119.0" fitWidth="154.0" layoutX="489.0" layoutY="224.0" pickOnBounds="true" preserveRatio="true" translateX="2.0" translateY="-2.0">
                <image>
