@@ -113,22 +113,22 @@
                         <Image url="@../images/profile.png" />
                      </image>
                   </ImageView>
-                  <Label prefHeight="35.0" prefWidth="249.0" text="Ivan Dave Besere" textFill="WHITE" translateX="-5.0" translateY="24.0">
+                  <Label fx:id="profile_username" prefHeight="35.0" prefWidth="287.0" text="Ivan Dave" textFill="WHITE" translateX="-5.0" translateY="24.0">
                      <font>
                         <Font name="Montserrat-Bold" size="26.0" />
                      </font>
                   </Label>
-                  <ImageView fx:id="profileImage1" fitHeight="41.0" fitWidth="40.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" translateX="419.0" translateY="9.0">
+                  <ImageView fx:id="profileImage1" fitHeight="41.0" fitWidth="40.0" layoutX="10.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" translateX="386.0" translateY="9.0">
                      <image>
                         <Image url="@../images/support%20(1).png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="profileImage11" fitHeight="46.0" fitWidth="41.0" layoutX="318.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" translateX="419.0" translateY="9.0">
+                  <ImageView fx:id="profileImage11" fitHeight="46.0" fitWidth="41.0" layoutX="318.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" translateX="386.0" translateY="9.0">
                      <image>
                         <Image url="@../images/about-us.png" />
                      </image>
                   </ImageView>
-                  <ImageView fx:id="profileImage12" fitHeight="41.0" fitWidth="40.0" layoutX="415.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" translateX="419.0" translateY="9.0">
+                  <ImageView fx:id="profileImage12" fitHeight="41.0" fitWidth="40.0" layoutX="415.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" translateX="386.0" translateY="9.0">
                      <image>
                         <Image url="@../images/setting.png" />
                      </image>
@@ -154,8 +154,8 @@
             <TextField id="nameField" fx:id="nameField" layoutX="116.0" layoutY="307.0" prefHeight="55.0" prefWidth="346.0" translateY="-62.0" />
             <TextField id="mnameField" fx:id="mnameField" layoutX="503.0" layoutY="305.0" prefHeight="55.0" prefWidth="368.0" translateX="19.0" translateY="-60.0" />
             <TextField id="lnameField" fx:id="lnameField" layoutX="118.0" layoutY="343.0" prefHeight="55.0" prefWidth="346.0" translateX="-3.0" translateY="26.0" />
-            <TextField id="ageField" fx:id="ageField" layoutX="524.0" layoutY="356.0" prefHeight="55.0" prefWidth="366.0" translateY="12.0" />
-            <DatePicker id="myCalendar" fx:id="myCalendar" layoutX="141.0" layoutY="485.0" prefHeight="53.0" prefWidth="352.0" translateX="-27.0" translateY="12.0" />
+            <DatePicker id="myCalendar" fx:id="myBirthdate" layoutX="554.0" layoutY="359.0" prefHeight="53.0" prefWidth="352.0" translateX="-27.0" translateY="12.0" />
+            <TextField id="ageField" fx:id="ageField" layoutX="115.0" layoutY="483.0" prefHeight="55.0" prefWidth="366.0" translateY="12.0" />
             <ComboBox id="yearLevel" fx:id="yearLevel" layoutX="503.0" layoutY="484.0" prefHeight="53.0" prefWidth="370.0" translateX="18.0" translateY="13.0" />
             <Label layoutX="123.0" layoutY="256.0" prefHeight="45.0" prefWidth="153.0" text="FIRST NAME" textFill="WHITE" translateX="-7.0" translateY="-61.0">
                <font>
@@ -177,12 +177,12 @@
                   <Font name="Montserrat-Bold" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="125.0" layoutY="431.0" prefHeight="45.0" prefWidth="140.0" text="BIRTHDATE" textFill="WHITE" translateX="-8.0" translateY="12.0">
+            <Label layoutX="539.0" layoutY="314.0" prefHeight="45.0" prefWidth="140.0" text="BIRTHDATE" textFill="WHITE" translateX="-8.0" translateY="12.0">
                <font>
                   <Font name="Montserrat-Bold" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="533.0" layoutY="309.0" prefHeight="45.0" prefWidth="77.0" text="AGE" textFill="WHITE" translateX="-8.0" translateY="11.0">
+            <Label layoutX="133.0" layoutY="437.0" prefHeight="45.0" prefWidth="77.0" text="AGE" textFill="WHITE" translateX="-8.0" translateY="11.0">
                <font>
                   <Font name="Montserrat-Bold" size="21.0" />
                </font>

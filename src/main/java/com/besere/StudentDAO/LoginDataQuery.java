@@ -6,6 +6,7 @@
 
 package com.besere.StudentDAO;
 
+import com.besere.controller.MainController;
 import com.besere.controller.SceneController;
 import com.besere.database.DatabaseConnection;
 
@@ -50,7 +51,7 @@ public class LoginDataQuery {
 
                 if(passwordVerification(password,hashpassword)) {
                     System.out.println("Correctness");
-                    scenecontroller.showMainContent();
+                    scenecontroller.showMainContent(username);
                 }else{
                     Platform.runLater(()-> {
                         System.out.println("Wrongggness");

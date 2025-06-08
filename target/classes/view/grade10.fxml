@@ -31,7 +31,7 @@
       </ScrollPane>
       <HBox layoutX="-1.0" prefHeight="90.0" prefWidth="1176.0">
          <children>
-            <TextField fx:id="searchField" prefHeight="49.0" prefWidth="376.0" text="Search Here..." translateX="10.0" translateY="22.0">
+            <TextField fx:id="searchField" prefHeight="49.0" prefWidth="376.0" promptText="Search Here..." translateX="10.0" translateY="22.0">
                <font>
                   <Font size="21.0" />
                </font>

@@ -116,9 +116,11 @@ public class SceneController implements Initializable {
         }
     }
     
-    public void showMainContent() throws IOException{
+    public void showMainContent(String usernameData) throws IOException{
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Main.fxml"));
         Parent mainroot = loader.load();
+        MainController maincontroller = loader.getController();
+        maincontroller.setProfileUsername(usernameData);
         
         scene = new Scene(mainroot);
         stage = (Stage) username.getScene().getWindow();

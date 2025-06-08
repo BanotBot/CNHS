@@ -43,7 +43,7 @@ public class InsertDataQuery{
             Connection conn = DatabaseConnection.getconnection();
             PreparedStatement prepared = conn.prepareStatement(sql)){
             
-            CheckTableQuery.checkTable(conn, tablename);
+            CheckTableQuery.checkTable(conn,tablename);
             System.out.println("CheckTable -> " + CheckTableQuery.checkTable(conn, tablename));               
                 System.out.println("sql => " + sql);
             
@@ -63,7 +63,7 @@ public class InsertDataQuery{
                             "SUCCESSFULLY INSERTED DATA",
                             "/images/checkmark.png");
                     });
-
+                    
                 }else{
                     Platform.runLater(()-> {
                         DialogUtil.showError(
@@ -72,7 +72,7 @@ public class InsertDataQuery{
                             "/images/checkmark.png");
                     });
                 }
-
+                
         } catch (SQLException e) {
               System.out.println("Database Error!" + e.getMessage());
         } catch (IOException | ClassNotFoundException ex) {

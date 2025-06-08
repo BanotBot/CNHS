@@ -22,6 +22,8 @@ import com.besere.validator.ValidatorData;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -75,13 +77,14 @@ public class MainController implements Initializable
     @FXML private Label logoLabel;
     
     @FXML private ImageView profileImage;
+    @FXML private Label profile_username;
     @FXML private ComboBox<Integer> yearLevel;
     
     @FXML private TextField nameField;
     @FXML private TextField mnameField;
     @FXML private TextField lnameField;
     @FXML private TextField ageField;
-    @FXML private DatePicker myCalendar;
+    @FXML private DatePicker myBirthdate;
     
     @FXML private Label grade7;
     @FXML private Label grade8;
@@ -110,7 +113,7 @@ public class MainController implements Initializable
         
         studobj = new StudentService();
         studentsList = new LinkedList<>();
-    
+        
         int[]ylvl = {7,8,9,10,11,12};
       
         for (int i : ylvl)
@@ -126,7 +129,7 @@ public class MainController implements Initializable
             try {
                 selectLabel(grade7,e);
             } catch (IOException ex) {
-                Logger.getLogger(MainController.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(MainController.class.getName()).log(Level.SEVERE,null,ex);
             }
         });
         grade8.addEventHandler(MouseEvent.MOUSE_CLICKED,e-> {
@@ -198,6 +201,13 @@ public class MainController implements Initializable
             setProfileImageStyle();
         });
         
+        
+        myBirthdate.valueProperty().addListener((obs,oldval,newval)->{
+            if (newval != null) {
+                int age = calculateAge(newval,LocalDate.now());
+                ageField.setText(String.valueOf(age));
+            }
+        });
         mainPane.getStylesheets().add(getClass().getResource("/css/style/StyleMain.css").toExternalForm());
     }
     
@@ -212,10 +222,10 @@ public class MainController implements Initializable
 
             int age = Integer.parseInt(ageField.getText().strip());
 
-            java.sql.Date birthdate = java.sql.Date.valueOf(myCalendar.getValue());
-            System.out.println("BirthDate maincontroller => " + birthdate);
+            java.sql.Date birthdate = java.sql.Date.valueOf(myBirthdate.getValue());
             int yLevel = yearLevel.getValue();
 
+            
             if (!ValidatorData.anynull(name,mname,lname,age,birthdate,yLevel)) {
                 
                 System.out.println("First Task......");
@@ -246,16 +256,16 @@ public class MainController implements Initializable
         
                 //Clear the input field after the upload of the data
                 Platform.runLater(() ->{
-                        studentsList.add(student);
-                        nameField.clear();
-                        mnameField.clear();
-                        lnameField.clear();
-                        ageField.clear();
-                        myCalendar.setValue(null);
-                        yearLevel.setValue(null);
+                    studentsList.add(student);
+                    nameField.clear();
+                    mnameField.clear();
+                    lnameField.clear();
+                    ageField.clear();
+                    myBirthdate.setValue(null);
+                    yearLevel.setValue(null);
                 });
             }
- 
+            
         } catch (IOException | NumberFormatException e) {
             DialogUtil.showError(
                 "DATAFIELD MUST NOT BE EMPTY",
@@ -327,6 +337,12 @@ public class MainController implements Initializable
         }
     }
     
+    private int calculateAge(LocalDate birthdate,LocalDate currentDate){
+        if (birthdate != null && currentDate != null)
+            return Period.between(birthdate, currentDate).getYears();
+        return 0;
+    }
+    
     private void seniorHighMenu(){
       senior_high_container.setVisible(true);
       grade11.setVisible(true);
@@ -340,6 +356,9 @@ public class MainController implements Initializable
         Circle clip = new Circle(35,35,35);
         profileImage.setClip(clip);
     }
+    public void setProfileUsername(String newusername){
+       this.profile_username.setText(newusername);
+    }
     public void setProfileImage(Image image){
         profileImage.setImage(image);
     }
@@ -347,7 +366,6 @@ public class MainController implements Initializable
     public AnchorPane getmainPane(){
         return mainPane;
     }
-    
     public Pane getMainContent(){
       return mainContentPane;
     }
@@ -360,6 +378,6 @@ public class MainController implements Initializable
     public ImageView getLoadingImage(){
         return loadingImage;
     }
- 
+    
 }
 

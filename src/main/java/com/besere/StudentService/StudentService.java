@@ -20,7 +20,6 @@ import java.sql.Date;
 
 public class StudentService
 {
-    
     private Connection conn;
     
     private String name;
@@ -32,8 +31,6 @@ public class StudentService
   
     public void handleData() throws IOException, ClassNotFoundException
     {
-        System.out.println("connection => " + conn);
-        
         //VALIDATE THE DATA
         if (ValidatorData.anynull(getName(),getAge(),getBirthdate(),getYearLevel())) {
             System.out.println("Value is empty");
@@ -84,6 +81,5 @@ public class StudentService
     public int getYearLevel(){
         return yearLevel;
     }
-    
-    
+
 }

@@ -5,6 +5,7 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -31,10 +32,13 @@
       </ScrollPane>
       <HBox layoutX="-1.0" prefHeight="90.0" prefWidth="1176.0">
          <children>
-            <TextField fx:id="searchField" prefHeight="49.0" prefWidth="376.0" text="Search Here..." translateX="10.0" translateY="22.0">
+            <TextField fx:id="searchField" prefHeight="49.0" prefWidth="376.0" promptText="Search Here..." translateX="10.0" translateY="22.0">
                <font>
                   <Font size="21.0" />
                </font>
+               <effect>
+                  <Blend />
+               </effect>
             </TextField>
             <ImageView fitHeight="40.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true" translateX="-35.0" translateY="31.0">
                <image>

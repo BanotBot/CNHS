@@ -23,7 +23,6 @@ public class App extends Application
     @Override
     public void start(Stage stage) throws IOException
     {
-        
         try
         {
              root = FXMLLoader.load(getClass().getResource("/view/Login.fxml"));
