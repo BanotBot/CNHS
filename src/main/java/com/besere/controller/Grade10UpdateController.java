@@ -18,11 +18,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -46,6 +48,10 @@ public class Grade10UpdateController implements Initializable,StudentProvider{
     private Parent root;
     
     private Image image;
+    @FXML
+    private AnchorPane updateRoot;
+    @FXML
+    private Button ButtonUpdate;
    
     protected void setStudentProvider(StudentProvider studentprovider){
         this.studentprovider = studentprovider;
@@ -90,6 +96,7 @@ public class Grade10UpdateController implements Initializable,StudentProvider{
         stage.showAndWait();
     }
     
+    @FXML
     public void updateStudent(ActionEvent event) throws IOException,ClassNotFoundException,SQLException
     {
         if(ValidatorData.anynull(

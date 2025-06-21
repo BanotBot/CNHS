@@ -16,6 +16,7 @@ com\besere\contentloader\grade12loader.class
 com\besere\contentloader\grade11loader.class
 com\besere\controller\Grade11UpdateController.class
 module-info.class
+com\besere\controller\SampleController.class
 com\besere\uicontroller\DialogLoader.class
 com\besere\controller\Grade8UpdateController.class
 com\besere\contentloader\grade10loader.class

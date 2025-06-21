@@ -2,6 +2,7 @@ module com.besere.cnhs {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.sql;
+    requires java.base;
 
     opens com.besere.model to javafx.fxml;
     opens com.besere.controller to javafx.fxml;

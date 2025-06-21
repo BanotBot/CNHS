@@ -151,23 +151,23 @@
                   <Glow level="0.22" />
                </effect>
             </Button>
-            <TextField id="nameField" fx:id="nameField" layoutX="116.0" layoutY="307.0" prefHeight="55.0" prefWidth="346.0" translateY="-62.0" />
-            <TextField id="mnameField" fx:id="mnameField" layoutX="503.0" layoutY="305.0" prefHeight="55.0" prefWidth="368.0" translateX="19.0" translateY="-60.0" />
-            <TextField id="lnameField" fx:id="lnameField" layoutX="118.0" layoutY="343.0" prefHeight="55.0" prefWidth="346.0" translateX="-3.0" translateY="26.0" />
-            <DatePicker id="myCalendar" fx:id="myBirthdate" layoutX="554.0" layoutY="359.0" prefHeight="53.0" prefWidth="352.0" translateX="-27.0" translateY="12.0" />
-            <TextField id="ageField" fx:id="ageField" layoutX="115.0" layoutY="483.0" prefHeight="55.0" prefWidth="366.0" translateY="12.0" />
-            <ComboBox id="yearLevel" fx:id="yearLevel" layoutX="503.0" layoutY="484.0" prefHeight="53.0" prefWidth="370.0" translateX="18.0" translateY="13.0" />
-            <Label layoutX="123.0" layoutY="256.0" prefHeight="45.0" prefWidth="153.0" text="FIRST NAME" textFill="WHITE" translateX="-7.0" translateY="-61.0">
+            <TextField id="nameField" fx:id="nameField" layoutX="120.0" layoutY="307.0" prefHeight="55.0" prefWidth="362.0" translateY="-62.0" />
+            <TextField id="mnameField" fx:id="mnameField" layoutX="507.0" layoutY="305.0" prefHeight="55.0" prefWidth="364.0" translateX="19.0" translateY="-60.0" />
+            <TextField id="lnameField" fx:id="lnameField" layoutX="122.0" layoutY="343.0" prefHeight="55.0" prefWidth="364.0" translateX="-3.0" translateY="26.0" />
+            <DatePicker id="myCalendar" fx:id="myBirthdate" layoutX="554.0" layoutY="359.0" prefHeight="53.0" prefWidth="366.0" translateX="-27.0" translateY="12.0" />
+            <TextField id="ageField" fx:id="ageField" layoutX="119.0" layoutY="483.0" prefHeight="55.0" prefWidth="362.0" translateY="12.0" />
+            <ComboBox id="yearLevel" fx:id="yearLevel" layoutX="509.0" layoutY="484.0" prefHeight="53.0" prefWidth="368.0" translateX="18.0" translateY="13.0" />
+            <Label layoutX="123.0" layoutY="256.0" prefHeight="45.0" prefWidth="153.0" text="FIRST NAME" textFill="WHITE" translateX="-4.0" translateY="-61.0">
                <font>
                   <Font name="Montserrat-Bold" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="491.0" layoutY="429.0" prefHeight="45.0" prefWidth="140.0" text="YEAR LEVEL" textFill="WHITE" translateX="31.0" translateY="15.0">
+            <Label layoutX="491.0" layoutY="429.0" prefHeight="45.0" prefWidth="140.0" text="YEAR LEVEL" textFill="WHITE" translateX="40.0" translateY="21.0">
                <font>
                   <Font name="Montserrat-Bold" size="21.0" />
                </font>
             </Label>
-            <Label layoutX="508.0" layoutY="245.0" prefHeight="45.0" prefWidth="170.0" text="MIDDLE NAME" textFill="WHITE" translateX="14.0" translateY="-49.0">
+            <Label layoutX="508.0" layoutY="245.0" prefHeight="45.0" prefWidth="170.0" text="MIDDLE NAME" textFill="WHITE" translateX="18.0" translateY="-49.0">
                <font>
                   <Font name="Montserrat-Bold" size="21.0" />
                </font>

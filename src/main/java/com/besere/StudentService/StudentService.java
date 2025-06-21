@@ -57,7 +57,7 @@ public class StudentService
         this.age = age;
     }
     public void setBirthdate(Date birthdate){
-        this.birthdate = birthdate;
+        this.birthdate = birthdate;                                                                                                                                                     
     }
     public void setYearLevel(int yearlevel){
         this.yearLevel = yearlevel;
@@ -81,5 +81,5 @@ public class StudentService
     public int getYearLevel(){
         return yearLevel;
     }
-
+    
 }
